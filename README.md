@@ -9,8 +9,8 @@ The main goal was to create a web and mobile application that would allow animal
 Through the created network, shelters will be able to provide mass information about current needs or volunteer activities.
 
 ## Authors
-- **Marek Barnovský** - Design, Web 
-- **Samuel Bartko** - Mobile App Development, Backend 
+- **Marek Barnovský** - Design, Web Development
+- **Samuel Bartko** - Mobile App Development, Backend Development
 - **Patrik Jakubov** - Testing
 - **Dominik Keresteš** - Backend Development
 - **Martin Lapšanský** - Web Development
