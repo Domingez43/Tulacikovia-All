@@ -1,0 +1,53 @@
+.footer {
+    background-color: #E5F3FF;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.logo {
+    width: 150px;
+    height: 30px;
+}
+
+.columns-section {
+    display: flex;
+    justify-content: space-around;
+    flex: 2;
+}
+
+.column {
+    margin: 0 20px;
+}
+
+.contact-section {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.email-input {
+    width: 520px;
+    padding: 10px;
+    margin: 10px 0;
+
+}
+.question-input {
+    height: 100px;
+    width: 520px;
+}
+
+.send-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #5D8ADB;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.send-button:hover {
+    background-color: #80B3FF;
+}

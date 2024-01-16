@@ -1,0 +1,145 @@
+.home-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    font-family: "FONTSPRING DEMO - Greycliff CF Medium", sans-serif;
+    overflow: hidden
+}
+
+.home-page h2{
+    font-family: "FONTSPRING DEMO - Greycliff CF Extra Bold", sans-serif;
+    margin: 0;
+    font-size: 4rem;
+}
+
+.home-page p {
+    font-size: 2rem;
+}
+
+.left-section {
+    flex: 1;
+    margin-left: 100px;
+    max-width: 900px;
+    text-align: left;
+    margin-top: 30px;
+
+}
+
+.right-section {
+    text-align: center;
+    overflow: hidden;
+}
+
+.dog-image {
+    border-radius: 50%;
+    margin-top: 20px;
+    background-color: #5D8ADB ;
+    height: 900px;
+    width: 860px;
+    display: flex;
+    margin-right: -100px;
+
+}
+
+.triangle-container {
+    display: flex;
+    left: 0;
+    width: 0;
+    height:0;
+    border-left: 250px solid transparent;
+    border-right: 250px solid transparent;
+    border-top: 250px solid #5D8ADB;
+    transform: rotate(45deg);
+    margin-left: -270px;
+    align-items: flex-end;
+    margin-top: 100px;
+    margin-bottom: -40px;
+}
+
+.triangle-image {
+    width: 500px; /* Adjust the size based on your design */
+    height: 500px;
+    margin-bottom: 50px; /* Adjust the margin based on your design */
+    transform: rotate(-45deg);
+    margin-left: -200px;
+}
+
+.main-button {
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #5D8ADB ; /* Green color, adjust based on your design */
+    color: black;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 400px;
+    height: 100px;
+    margin-bottom: 100px;
+
+}
+
+.main-button:hover {
+    background-color: #80B3FF;
+}
+
+.search-icon{
+    margin-right: 10px;
+}
+
+.scroll-down-button {
+    border: none;
+    cursor: pointer;
+    margin-left: 500px;
+    background-color: #5D8ADB;
+    border-radius: 30%;
+    font-size: 20px;
+    width: 8vw;
+}
+
+.scroll-icon {
+    transition: transform 0.3s ease-in-out;
+}
+
+.scroll-down-button:hover .scroll-icon {
+    transform: translateY(5px);
+}
+
+@media (max-width: 768px) {
+    .home-page {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .right-section {
+        display: none;
+    }
+
+    .left-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .left-section p {
+        font-size: 1rem;
+    }
+
+    .main-button {
+        font-size: 0.8rem;
+    }
+
+    .scroll-down-button h4 {
+        font-size: 1rem;
+    }
+    header {
+        padding: 10px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
+
+

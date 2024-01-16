@@ -1,0 +1,11 @@
+openapi: 3.0.0
+info:
+  title: API Documentation
+  version: 1.0.0
+paths:
+  /healthcheck:
+    get:
+      summary: Health Check
+      responses:
+        200:
+          description: OK

@@ -1,0 +1,138 @@
+.edit-event-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.modal-content-edit {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    flex-direction: column;
+}
+
+.form-content-edit {
+    display: flex;
+    flex-direction: row;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.form-left-edit {
+    flex: 1;
+    flex-direction: column;
+}
+
+.form-right-edit {
+    flex: 1;
+    margin-left: 20px;
+    flex-direction: column;
+}
+
+.edit_event_heading h2 {
+    margin-bottom: 20px;
+    top: 0;
+    padding-top: 20px;
+}
+
+.edit-event-modal form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.edit-event-modal label {
+    display: block;
+    font-weight: bold;
+    width: 100%;
+}
+
+.edit-event-modal .input-group-event {
+    flex: 1;
+    margin-bottom: 15px;
+    width: 700px;
+}
+
+.edit-event-modal input,
+.edit-event-modal textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.edit-event-modal input[type="file"] {
+    border: none;
+}
+
+.edit-event-modal .event-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+.edit-event-modal .button-group {
+    margin-top: 10px;
+}
+
+.edit-event-modal button[type="submit"] {
+    background-color: #5D8ADB;
+    margin-right: 10px;
+}
+
+.edit-event-modal button:hover {
+    background-color: #80B3FF;
+}
+
+.edit-event-modal button[type="button"] {
+    background-color: #5D8ADB;
+    margin-top: 20px;
+}
+
+.edit-event-modal button[type="button"]:hover {
+    background-color: #80B3FF;
+}
+
+.edit-event-modal .form-top {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1600px) {
+    .modal-content-edit {
+        max-width: 80%;
+        max-height: 80%;
+        padding-top: 50px;
+    }
+    .form-content-edit {
+        flex-direction: column;
+    }
+
+    .form-left-edit,
+    .form-right-edit {
+        flex: 1;
+        margin-left: 0;
+    }
+    .edit-event-modal h3 {
+        font-size: 1em;
+    }
+    .edit-event-modal .input-group-event {
+        width: 400px;
+    }
+}

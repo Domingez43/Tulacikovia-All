@@ -1,0 +1,364 @@
+/* RegistrationForm.css */
+.reg-container{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+}
+.registration-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+.image-container {
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    margin-left: -100px;
+}
+
+.image_dog {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    background-color: #5D8ADB;
+}
+
+.image_dog2{
+    width: 500px;
+    height: 500px;
+    display: block;
+    background-color: #5D8ADB;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.image-container2{
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    margin-top: 300px;
+    margin-right: -100px;
+    
+}
+.flipped_image {
+    transform: scaleX(-1) scale(1.5);
+}
+.registration-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    margin: 0 20px;
+    align-items: center;
+    margin: 20px 20px;
+}
+
+.form-group1 {
+    display: flex;
+    flex-direction: row;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.input-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 700px;
+}
+
+.input-group{
+        display: flex;
+        width: -moz-available;
+    }
+
+.input-group input {
+    margin-right: 10px;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.input-group .textarea-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transition: 0.2s ease-out;
+    transform-origin: top left;
+    transform: translateY(-100%) scale(1);
+}
+
+.input-group textarea {
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.input-group textarea:focus + .textarea-label,
+.input-group textarea:not(:placeholder-shown) + .textarea-label {
+    transform: translateY(-150%) scale(0.8);
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+textarea{
+    width: 100%;
+}
+
+.register-button {
+    padding: 15px;
+    background-color: #5D8ADB;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 250px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#description.input-group{
+    height: 150px;
+    /**/
+}
+
+
+.input-label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    background-color: #fff;
+    padding: 0 5px;
+}
+
+
+.input-label-hidden {
+    display: none;
+}
+.login_issue {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: -moz-available;
+  }
+.login_issue h4{
+  visibility: hidden;
+}
+.login_issue h5 {
+display: block;
+    color: #007bff;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.login_issue h5:hover {
+    color: #0056b3;
+}
+
+.new_account {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.new_account h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.new_account span {
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.new_account span:hover {
+    color: #0056b3;
+}
+
+/* Add this to your CSS file */
+
+.registration-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #80B3FF;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    text-align: center;
+    border-radius: 50px;
+    width: 30vw;
+    height: 30vh;
+}
+
+
+.registration-modal button {
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 20px;
+    width: 10vw;
+    height: 10vh;
+    font-weight: bold;
+}
+
+.ressetpassword-modal {
+ 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    text-align: center;
+    width: 600px;
+}
+.ressetpassword-modal img{
+    margin: 0;
+    
+}
+.ressetpassword-modal .input-group{
+    width: 500px;
+    margin-left: 10%;
+}
+.ressetpassword-modal .button{
+    width: 500px;
+    margin-left: 10%;
+}
+
+.alt_login button {
+    margin-right: 10px;
+
+}
+.alt_login{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.alt_login h4{
+    margin-right: 20px;
+}
+
+.facebookButton {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.facebookButtonText {
+    margin-left: 10px;
+}
+
+.googleButton {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.googleButtonText {
+    margin-left: 10px;
+}
+
+.back-button-user{
+    display: flex;
+    align-items: center;
+    top: 50px;
+    left: 100px;
+    cursor: pointer;
+    transition: margin-left 0.3s ease;
+    position: absolute;
+    padding-top: 0;
+}
+
+.back-button:hover {
+    opacity: 1;
+}
+
+.back-text {
+    margin-left: 8px;
+    font-size: 20px;
+    color: black;
+    transition: margin-left 0.3s ease, opacity 0.3s ease;
+}
+
+.back-button:hover .back-text {
+    margin-left: 12px;
+    opacity: 0.9;
+}
+
+.centered-container input{
+    height: 20px;
+    width: 20px;
+    display: flex;
+ }
+.check-pass {
+    display: flex;
+    margin-left: 0;
+    height: fit-content
+}
+
+.centered-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.centered-container label{
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .image_dog,
+    .image_dog2 {
+        display: none;
+    }
+}
+
+.input-message-wrong{
+    font-Size: 14px; 
+    color: red;
+   
+}
+
+.input-message-right{
+    font-Size: 14px; 
+    color: green;
+   
+}

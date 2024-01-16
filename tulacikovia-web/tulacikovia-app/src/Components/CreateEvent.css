@@ -1,0 +1,203 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 80%;
+    max-height: 80%;
+    overflow: auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    display: flex; /* Use flex to create a two-column layout */
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    flex-direction: column;
+}
+
+.form-content{
+    display: flex;
+    flex-direction: row;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.form-left {
+    flex: 1;
+    flex-direction: column;
+}
+
+.form-right {
+    flex: 1;
+    margin-left: 20px; /* Adjust margin as needed for spacing between columns */
+    flex-direction: column;
+}
+.new_event_heading {
+    display: flex;
+}
+
+.select-heading select{
+    display: flex;
+    font-size: 2.5vh;
+    border-radius: 50px;
+    background-color: #80B3FF;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.select-heading{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.modal-heading{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.new_event_heading h2 {
+    margin-bottom: 20px;
+    padding-top: 20px;
+    display: flex;
+    align-items: center; /* Center items vertically within the h2 */
+}
+
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    width: 100%;
+
+}
+
+.input-group-event {
+    flex: 1;
+    width: 700px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+input[type="file"] {
+    border: none;
+}
+
+.event-button{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+.button-group{
+    margin-top: 30px;
+}
+
+button[type="submit"] {
+    background-color: #5D8ADB;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #80B3FF;
+}
+
+button[type="button"] {
+    background-color: #5D8ADB;
+    margin-top: 20px;
+}
+
+button[type="button"]:hover {
+    background-color: #80B3FF;
+}
+
+.form-top{
+    display: flex;
+    flex-direction: column;
+}
+.error-message{
+    color: red;
+    font-weight: normal;
+}
+
+@media (max-width: 1600px) {
+    .modal-content {
+        max-width: 80%;
+        max-height: 80%;
+    }
+    .form-content {
+        flex-direction: column;
+    }
+
+    .form-left,
+    .form-right {
+        flex: 1;
+        margin-left: 0;
+    }
+    h3{
+        font-size: 1em;
+    }
+    .input-group-event{
+        width: 400px;
+    }
+    .new_event_heading h2 {
+        margin-bottom: 20px;
+        padding-top: 20px;
+        display: flex;
+        align-items: center;
+        font-size: 1.5em; /* Adjust as needed */
+    }
+    .select-heading {
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+    }
+
+    .select-heading select {
+        font-size: 1.5em; /* Adjust as needed */
+        border-radius: 20px; /* Make it rounder */
+        margin-right: 10px; /* Adjust spacing */
+    }
+
+    .modal-heading {
+        flex-direction: column; /* Adjust to column layout on smaller screens */
+        align-items: center; /* Center items horizontally within the modal heading */
+        padding-top: 300px;
+    }
+
+    .select-heading {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px; /* Adjust spacing */
+    }
+
+    .select-heading select {
+        font-size: 1.5em; /* Adjust as needed */
+        border-radius: 20px; /* Make it rounder */
+        margin-right: 10px; /* Adjust spacing */
+    }
+}

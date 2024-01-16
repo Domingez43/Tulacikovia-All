@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Swagger UI</title>
+</head>
+<body>
+  <div id="swagger-ui"></div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/3.52.2/swagger-ui-bundle.js"></script>
+<script>
+  const ui = SwaggerUIBundle({
+    url: '/docs.json',
+    dom_id: '#swagger-ui',
+  });
+</script>
+</html>

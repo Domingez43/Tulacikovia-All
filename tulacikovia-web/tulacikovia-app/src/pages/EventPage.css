@@ -1,0 +1,283 @@
+.header-container {
+    font-family: "FONTSPRING DEMO - Greycliff CF Extra Bold", sans-serif;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #80B3FF;
+    color: white;
+    font-size: 1.5em;
+    position: relative;
+    text-align: center;
+    height: 80px;
+    margin-top: 30px;
+}
+
+.header-container h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center items vertically */
+    margin: 0; /* Remove default margin to ensure perfect centering */
+}
+
+.event-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.event-card {
+    width: 400px; /* Adjust the width as needed */
+    height: 430px; /* Adjust the height as needed */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+}
+
+.event-card:hover {
+    transform: scale(1.05);
+}
+
+.event-image {
+    width: fit-content;
+    height: 225px;
+    width: 500px;
+    object-fit: cover;
+}
+
+.event-name h2{
+    margin: 0;
+}
+
+.event-details {
+}
+
+.look-more {
+    position: absolute;
+    bottom: 10px;
+    background-color: #5D8ADB;
+    color: white;
+    padding: 5px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    max-width: 80px;
+    margin-left: 160px;
+}
+.add-event-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px; /* Adjust the width as needed */
+    height: 430px; /* Adjust the height as needed */
+    border: 1px dashed #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    flex-direction: column;
+}
+
+.add-event-card:hover {
+    transform: scale(1.05);
+}
+
+.add-event-card i {
+    font-size: 3em;
+    color: #80B3FF;
+}
+
+.add-event-text {
+    margin-left: 10px;
+    font-size: 1.2em;
+    color: #666;
+}
+
+.event-options {
+    position: relative;
+    cursor: pointer;
+    margin: -10px;
+    color: white;
+}
+
+.options-icon {
+    font-size: 50px; /* Adjust the size of the three dots */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 20px;
+    max-height: 20px;
+    color: white;
+}
+
+.options-menu {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 70px;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    z-index: 1;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.options-menu div {
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.options-menu div:hover {
+    background-color: #f0f0f0;
+}
+
+#delete{
+    color: red;
+}
+
+#archive{
+    color: #5D8ADB;
+}
+
+#edit{
+    color: black;
+}
+
+.back-button-event {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: 1em;
+    max-width: 100px;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 10px;
+    margin-left: 30px;
+}
+
+.icon-container {
+    display: flex;
+    transition: transform 0.3s ease-out; /* Added transition for transform property */
+    position: absolute;
+}
+
+.back-button:hover .icon-container {
+    transform: translateX(-10px); /* Adjust the value based on your preference */
+}
+.event-filters-container {
+    display: flex;
+    gap: 10px; /* Adjust the gap between buttons as needed */
+    flex-direction: row;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    max-height: 100px;
+    width: 3000px;
+    justify-content: center;
+}
+
+.event-filters-container label{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.event-filters-container .sortDropdown label{
+    width: 125px;
+}
+
+.event-filters-container .limit_dropdown label {
+    width: 50px;
+}
+
+.event-filters-container select{
+    padding: 10px 15px;
+    border: none;
+    background-color: #5D8ADB; /* Choose your desired background color */
+    color: #fff; /* Choose your desired text color */
+    border-radius: 50px; /* Set the border radius for rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+    font-size: 20px;
+    font-weight: bold;
+    outline: none; /* Remove the default button outline */
+}
+
+.filter_button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #5D8ADB; /* Choose your desired background color */
+    color: #fff; /* Choose your desired text color */
+    border-radius: 50px; /* Set the border radius for rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+    font-size: 20px;
+    font-weight: bold;
+    outline: none; /* Remove the default button outline */
+}
+
+button:hover {
+    background-color: #2980b9; /* Change the background color on hover */
+}
+
+.events-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows event cards to wrap to the next line if there's not enough space */
+    gap: 20px; /* Adjust the gap between event cards as needed */
+}
+
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.tag {
+    background-color: #80B3FF; /* Example background color */
+    color: #fff; /* Example text color */
+    border-radius: 15px; /* Example border radius for rounded corners */
+    padding: 5px 10px; /* Example padding */
+    display: inline-block;
+}
+
+.pagination-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.pagination-container span{
+    font-size: 3vh;
+}
+.pagination-container button{
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: #80B3FF;
+    border-radius: 10px;
+
+}
+
+
+
+

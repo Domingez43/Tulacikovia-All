@@ -1,0 +1,20 @@
+.headerlog {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #5D8ADB;
+    color: white;
+    font-family: "FONTSPRING DEMO - Greycliff CF Extra Bold", sans-serif;
+    height: 80px;
+    justify-content: space-between;
+}
+
+.logotul {
+    size: 100px;
+    margin-right: 20px;
+}
+
+
+
+
+

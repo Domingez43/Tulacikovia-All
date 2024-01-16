@@ -1,0 +1,72 @@
+.dashboard-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 300px; /* Nastavte šírku podľa potreby */
+    background-color: #80B3FF;
+    overflow-y: auto; /* Pridávame posuvník, ak je obsah dlhší než obrazovka */
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.user-image{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+/* Príklad štýlov pre widgety */
+.widget {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    align-items: center;
+}
+
+.widget h3{
+    margin-right: 20px;
+    font-size: 30px;
+}
+
+.widget:hover {
+    background-color: #61dafb; /* Change the background color on hover */
+    transform: scale(0.95);
+}
+
+
+.arrow-icon.closed {
+    animation: arrowDisappear 0.5s ease-out; /* Adjust the animation duration and easing as needed */
+}
+
+
+.heading {
+    /* Your existing styles for the heading */
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Center the items vertically */ /* Relative positioning for absolute arrow positioning */
+    flex-direction: row;
+}
+.heading h2{
+    font-size: 30px;
+}
+.logout-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logout-button span{
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.logout-button:hover{
+    background-color: #61dafb;
+    cursor: pointer;
+}
