@@ -1,0 +1,12 @@
+FROM node:lts-alpine as base
+ENV NODE_ENV=development
+ENV MONGO=development
+WORKDIR /usr/src/app
+COPY ["package.json", "package-lock.json*", "npm-shrinkwrap.json*", "./"]
+RUN npm install --development --silent && npm install debug && mv node_modules ../
+RUN npm install jest
+COPY . .
+EXPOSE 3034
+# RUN chown -R node /usr/src/app
+USER node
+CMD ["npm", "run", "test:integration"]
