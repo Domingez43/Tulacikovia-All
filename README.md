@@ -1,8 +1,5 @@
 # Tulacikovia
 
-# EDIT(by Dominik Keresteš)
-My participation in this project could be found in `tulacikovia-backend` and also in `tulacikovia-backend/tulacikovia-nodejs`
-
 ## Project description:
 This project was created as part of the 9th annual [Live IT Projects](https://kpi.fei.tuke.sk/sk/content/zive-it-projekty).
 The main goal was to create a web and mobile application that would allow animal shelters and other similarly focused non-profit organizations to create a network of supporters and volunteers.
